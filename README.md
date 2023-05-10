@@ -1,2 +1,3 @@
 # ChatApplication
 A chat application using websockets
+A WebSocket handshake is much like simple HTTP GET request, but this request contains an ‘upgrade header’, which requests that the server switches to a binary protocol using a WebSocket and gives some information about the WebSocket connection. The server responds with a 101 header to confirm that it is switching protocols, and the WebSocket is open. Real-time data exchange between multiple clients and a server can now take place.
