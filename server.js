@@ -1,12 +1,12 @@
-import { createServer } from "http";
-import { Server } from "socket.io";
+// import { createServer } from "http";
+// import { Server } from "socket.io";
 
-const httpServer = createServer();
-const io = new Server(httpServer, {
-    cors: {
-        origin: "*"
-    }
-});
+// const httpServer = createServer();
+// const io = new Server(httpServer, {
+//     cors: {
+//         origin: "*"
+//     }
+// });
 
 // io.on('connection', (socket) => {
 //     console.log('Client connected');
@@ -23,6 +23,7 @@ const io = new Server(httpServer, {
 
 //list of users identified by their socked.id which is unique
 
+const io = require('socket.io')(3000);
 const users = {}
 
 
